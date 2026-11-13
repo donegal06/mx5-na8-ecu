@@ -75,7 +75,6 @@ U480,"AP2331W-7","SOT-23","C460346"
 
 #wbo opamp
 U601,"GS8551-TR","TSOT23-5","C157715"
-U601_2,"GS8551-TR","TSOT23-5","C157715"
 
 #non-JLC componentts
 #WBO heater low-side (MX-5 fork: fitted, so the on-board wideband works)
