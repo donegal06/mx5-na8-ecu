@@ -30,6 +30,14 @@ D420,"SS310","SMA","C116705"
 # its 33.3 V minimum absorbing ~11 J there. Vc max 53.3 V @ 28 A, within the 60 V buck.
 D418,"SMCJ33A","SMC","C438109"
 
+# Ignition outputs to the stock NA igniter (1G via R467 = IGN1, 1H via R464 = IGN2):
+# 10 ohm -> 330 ohm (MX-5 fork). Matches the proven MegaSquirt drive for factory Miata
+# igniters (270-330 ohm series) and limits a short to +14 V to ~39 mA, inside the
+# SN74LVC4245's ~50 mA output limit. In a sustained short the 0603 overheats and opens
+# first, protecting the buffer. IGN3-8 stay 10 ohm for future smart coils.
+R467,"330","R0603","C23138"
+R464,"330","R0603","C23138"
+
 # trigger schmidt buffer
 U490,"SN74LVC2G17DCKR","SOT-363","C50714"
 U491,"SN74LVC2G17DCKR","SOT-363","C50714"
