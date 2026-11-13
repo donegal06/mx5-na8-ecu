@@ -38,13 +38,6 @@ D418,"SMCJ33A","SMC","C438109"
 R467,"330","R0603","C23138"
 R464,"330","R0603","C23138"
 
-# Coil-on-plug option links (MX-5 fork): R902 = IGN3 -> 1T, R903 = IGN4 -> 1U.
-# Not fitted by default so nothing drives those cavities on the stock loom.
-# 1T (EGR, US cars only) and 1U are empty on non-US manual 94-95 cars. For a COP
-# swap, fit a 0R 0805 (or solder bridge) in each, or delete these two lines.
-R902,
-R903,
-
 # CAN termination (MX-5 fork): the MCU CAN module and the wideband CAN module
 # each carry a 120R terminator on the same bus, so the board measures 60R.
 # Drop one so the ECU end is 120R; the last gauge pod on the bus carries the
