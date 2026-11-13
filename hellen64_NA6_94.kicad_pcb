@@ -12881,7 +12881,7 @@
       (effects (font (size 0.8 0.8) (thickness 0.15)))
       (tstamp 7f49b18d-1669-4b43-b433-59b68b7d8f79)
     )
-    (fp_text value "100n 50V" (at 0 1.3) (layer "F.SilkS") hide
+    (fp_text value "100n" (at 0 1.3) (layer "F.SilkS") hide
       (effects (font (size 0.820001 0.820001) (thickness 0.17)) (justify left bottom))
       (tstamp eb8c4145-3f28-4414-80f0-6b7d3bd38db2)
     )

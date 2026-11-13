@@ -22224,7 +22224,7 @@
     (property "Reference" "C901" (id 0) (at 71.12 130.81 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "100n 50V" (id 1) (at 71.12 149.86 0)
+    (property "Value" "100n" (id 1) (at 71.12 149.86 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "hellen-one-common:C0603" (id 2) (at 71.12 139.7 0)
@@ -22358,7 +22358,7 @@
       (reference "Q901") (unit 1) (value "NCEP078N10AK") (footprint "Package_TO_SOT_SMD:TO-252-2")
     )
     (path "/26ab5ab3-8607-4f1c-ae31-15c336b6a842"
-      (reference "C901") (unit 1) (value "100n 50V") (footprint "hellen-one-common:C0603")
+      (reference "C901") (unit 1) (value "100n") (footprint "hellen-one-common:C0603")
     )
     (path "/7c86e8c3-7dfb-4369-9d53-3bab6b3599b3"
       (reference "D901") (unit 1) (value "SMCJ33CA") (footprint "Diode_SMD:D_SMC")
