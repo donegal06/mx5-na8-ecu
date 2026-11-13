@@ -89,4 +89,7 @@ U602_2,
 #pressure sensor
 U4,
 
+#main ECU connector (MX-5 fork): through-hole, fitted by JLC so it needn't be hand-soldered
+P2,"178780-1","178780-1","C5166246"
+
 #include board_id_na6_94-d.csv
