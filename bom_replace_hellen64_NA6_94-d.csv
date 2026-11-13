@@ -78,14 +78,14 @@ U601,"GS8551-TR","TSOT23-5","C157715"
 U601_2,"GS8551-TR","TSOT23-5","C157715"
 
 #non-JLC componentts
-#WBO low-side
-Q600,
+#WBO heater low-side (MX-5 fork: fitted, so the on-board wideband works)
+Q600,"BTS3028SDL","DPAK","C2150071"
 Q600_2,
 #WBO low-side
 Q601,
 Q601_2,
-#WBO STM32
-U602,
+#WBO STM32 (MX-5 fork: fitted; needs one-time SWD flash via J27)
+U602,"STM32F042K6Tx","LQFP32","C69216"
 U602_2,
 #pressure sensor
 U4,
