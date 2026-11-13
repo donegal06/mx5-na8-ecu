@@ -1,18 +1,19 @@
 #!/usr/bin/env python3
-"""Convert a KiCad 10 Excellon file (METRIC, decimal, routed slots) to the format
+"""Convert a KiCad 10 Excellon file (METRIC or INCH, decimal, routed slots) to the format
 the hellen-one gerbmerge expects (INCH,TZ 2:4 leading-zero suppressed, G85 slots)."""
 import re, sys
 src, dst = sys.argv[1], sys.argv[2]
 L = open(src).read().splitlines()
-assert 'METRIC' in L, 'not a metric file'
-inch = lambda mm: mm / 25.4
+metric = 'METRIC' in L
+assert metric or 'INCH' in L, 'unknown units'
+inch = (lambda mm: mm / 25.4) if metric else (lambda v: v)
 co = lambda v: str(int(round(inch(float(v)) * 10000)))
 out = []; header = True; route = None; last = (None, None)
 for l in L:
     if header:
         if l.startswith('; FORMAT='):
             out.append('; FORMAT={2:4/ absolute / inch / suppress leading zeros}'); continue
-        if l == 'METRIC': out.append('INCH,TZ'); continue
+        if l in ('METRIC', 'INCH'): out.append('INCH,TZ'); continue
         m = re.match(r'^T(\d+)C([\d.]+)$', l)
         if m: out.append(f'T{m.group(1)}C{inch(float(m.group(2))):.4f}'); continue
         out.append(l)
