@@ -89,6 +89,19 @@ U602_2,
 #pressure sensor
 U4,
 
+#MX-5 fork: leave the optional high-side / push-pull / solenoid H-bridge outputs unfitted.
+# They only reach solder pads P11-P14, P18, P22, P23, P26, P27 (not the ECU connector), nothing
+# in the NA8 plan uses them, and RZ7899 / PJM2319PSA are not orderable through JLC right now.
+U300,
+U303,
+Q300,
+Q301,
+Q302,
+Q303,
+Q304,
+Q313,
+Q314,
+
 #main ECU connector (MX-5 fork): through-hole, fitted by JLC so it needn't be hand-soldered
 P2,"178780-1","178780-1","C5166246"
 
