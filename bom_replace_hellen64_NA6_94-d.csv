@@ -102,6 +102,16 @@ Q304,
 Q313,
 Q314,
 
+#MX-5 fork: in-stock equivalents chosen on the JLC parts page (originals out of stock)
+C603,"33n","C0402","C106862"
+D3,"LED-BLUE-0603","LED-0603","C138541"
+D4,"LED-BLUE-0603","LED-0603","C138541"
+D105,"LED-BLUE-0603","LED-0603","C138541"
+D602,"LED-BLUE-0603","LED-0603","C138541"
+D104,"LED-GREEN-0603","LED-0603","C19273151"
+D601,"LED-GREEN-0603","LED-0603","C19273151"
+D106,"LED-YELLOW-0603","LED-0603","C165981"
+
 #main ECU connector (MX-5 fork): through-hole, fitted by JLC so it needn't be hand-soldered
 P2,"178780-1","178780-1","C5166246"
 
